@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()
     ->in([
-        __DIR__ . '/app',
-        __DIR__ . '/bootstrap',
-        __DIR__ . '/config',
-        __DIR__ . '/database/factories',
-        __DIR__ . '/database/seeders',
-        __DIR__ . '/routes',
-        __DIR__ . '/tests',
+        // __DIR__ . '/app',
+        // __DIR__ . '/bootstrap',
+        // __DIR__ . '/config',
+        // __DIR__ . '/database/factories',
+        // __DIR__ . '/database/seeders',
+        // __DIR__ . '/routes',
+        // __DIR__ . '/tests',
     ])
     ->exclude([
-        'cache',
+        // 'cache',
     ]);
 
 return (new PhpCsFixer\Config())
@@ -35,7 +35,7 @@ return (new PhpCsFixer\Config())
             'position_after_anonymous_constructs' => 'same',
         ],
 
-        'cast_spaces' => ['space' => 'single'],
+        'cast_spaces' => ['space' => 'none'],
         'class_attributes_separation' => [
             'elements' => [
                 'const' => 'one',

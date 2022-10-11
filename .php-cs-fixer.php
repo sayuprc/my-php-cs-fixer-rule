@@ -86,6 +86,7 @@ return (new PhpCsFixer\Config())
         'no_blank_lines_after_phpdoc' => true,
         'no_empty_phpdoc' => true,
         'no_extra_blank_lines' => ['tokens' => ['extra']],
+        'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_after_function_name' => true,
         'no_superfluous_phpdoc_tags' => false,
         'no_trailing_comma_in_singleline_array' => true,

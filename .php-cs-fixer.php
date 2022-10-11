@@ -21,6 +21,7 @@ return (new PhpCsFixer\Config())
         'binary_operator_spaces' => [
             'operators' => [
                 '=>' => 'single_space',
+                '|' => 'no_space',
             ],
         ],
         'blank_line_after_opening_tag' => true,
@@ -92,6 +93,7 @@ return (new PhpCsFixer\Config())
         'no_trailing_comma_in_singleline_array' => true,
         'no_useless_else' => true,
         'no_whitespace_before_comma_in_array' => ['after_heredoc' => false],
+        'no_whitespace_in_blank_line' => true,
         'not_operator_with_successor_space' => true,
 
         'object_operator_without_whitespace' => true,
@@ -118,7 +120,11 @@ return (new PhpCsFixer\Config())
 
         'single_blank_line_before_namespace' => true,
         'single_quote' => true,
+        'single_space_after_construct' => true,
+        'space_after_semicolon' => ['remove_in_empty_for_expressions' => true],
+        'statement_indentation' => true,
         'strict_comparison' => true,
+        'switch_case_space' => true,
 
         'ternary_operator_spaces' => true,
         'trailing_comma_in_multiline' => true,

@@ -4,16 +4,10 @@ declare(strict_types=1);
 
 $finder = PhpCsFixer\Finder::create()
     ->in([
-        // __DIR__ . '/app',
-        // __DIR__ . '/bootstrap',
-        // __DIR__ . '/config',
-        // __DIR__ . '/database/factories',
-        // __DIR__ . '/database/seeders',
-        // __DIR__ . '/routes',
-        // __DIR__ . '/tests',
+        // __DIR__
     ])
     ->exclude([
-        // 'cache',
+        //
     ]);
 
 return (new PhpCsFixer\Config())
@@ -30,6 +24,16 @@ return (new PhpCsFixer\Config())
             ],
         ],
         'blank_line_after_opening_tag' => true,
+        'blank_line_before_statement' => [
+            'statements' => [
+                'break',
+                'continue',
+                'declare',
+                'return',
+                'throw',
+                'try',
+            ],
+        ],
         'braces' => [
             'allow_single_line_closure' => true,
             'position_after_anonymous_constructs' => 'same',
@@ -49,6 +53,7 @@ return (new PhpCsFixer\Config())
 
         'declare_strict_types' => true,
 
+        'elseif' => true,
         'explicit_string_variable' => true,
 
         'function_declaration' => ['closure_function_spacing' => 'one'],
